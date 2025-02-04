@@ -3,16 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>E-Commerce Project</title>
+	<title>ALL Product | E-Commerce Project</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
-	<div class="header">
+	
 		<div class="container">
 			<div class="navbar">
 				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" width="130px"></a>
+					<img src="images/logo.png" width="125px">
 				</div>
 				<nav>
 					<ul id="MenuItems">
@@ -23,27 +23,79 @@
 						<li><a href="account.html">Account</a></li>
 					</ul>
 				</nav>
-				<a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+				<img src="images/cart.png" width="30px" height="30px">
 				<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
 			</div>
+		</div>
+
+<!------ single product details ------>
+
+
+	<div class="small-container single-product">
+		<div class="row">
+			<div class="col-2">
+				<img src="images/gallery-1.jpg" width="100%" id="ProductImg">
+
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="images/gallery-1.jpg" width="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="images/gallery-2.jpg" width="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="images/gallery-3.jpg" width="100%" class="small-img">
+					</div>
+					<div class="small-img-col">
+						<img src="images/gallery-4.jpg" width="100%" class="small-img">
+					</div>
+				</div>
+			</div>
+			<div class="col-2">
+				<p>Home / T-Shirt</p>
+				<h1>Red Printed T-Shirt by HRX</h1>
+				<h4>$50.00</h4>
+				<select>
+					<option>Select Size</option>
+					<option>Small</option>
+					<option>Medium</option>
+					<option>Large</option>
+					<option>XL</option>
+					<option>XXL</option>
+				</select>
+				<input type="number" value="1">
+				<a href="" class="btn">Add To Cart</a>
+				<h3>Product Details <i class="fa fa-indent"></i></h3>
+				<br>
+				<p>snjfjdfkfdkdkdkcndn kjndvfknvdknvkj knkdnvkjnvjkdjk knknkndkvjnjknnkjn kndkvnjkdv</p>
+			</div>
+			<div class="bartering-system">
+				<h3>Barter for a Better Price</h3>
+				<label for="preferredPrice">Enter Your Preferred Price ($):</label>
+				<input type="number" id="preferredPrice" min="1" placeholder="Enter price">
+				<button onclick="startBarter()">Start Barter</button>
+    <div id="barterResult"></div>
+</div>
+		</div>
+	</div>
+
+<!------title------>	
+
+	<div class="small-container">
+		<div class="row row-2">
+			<h2>Related Products</h2>
+			<p>View More</p>
+		</div>
+	</div>
+
+<!------products------>
 
 	<div class="small-container">
 		
-		<div class="row row-2">
-			<h2>All Products</h2>
-			<select>
-				<option>Default Shorting</option>
-				<option>Short by price</option>
-				<option>Short by popularity</option>
-				<option>Short By rating</option>
-				<option>Short by sale</option>
-			</select>
-		</div>
-
 		<div class="row">
 			<div class="col-4">
-				<a href="product-detail.html"><img src="images/product-1.jpg"></a>
-				<h4>Red Printed T-Shirt</h4>
+				<img src="images/product-9.jpg">
+				<h4>Black and yellow Watch</h4>
 				<div class="rating">
 					<i class="fa fa-star"></i>
 					<i class="fa fa-star"></i>
@@ -54,60 +106,8 @@
 				<p>$50.00</p>
 			</div>
 			<div class="col-4">
-				<img src="images/product-2.jpg">
-				<h4>Black Shoes</h4>
-				<div class="rating">
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star-half-o"></i>
-				</div>
-				<p>$60.00</p>
-			</div>
-			<div class="col-4">
-				<img src="images/product-3.jpg">
-				<h4>Grey Pants</h4>
-				<div class="rating">
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star-half-o"></i>
-					<i class="fa fa-star-o"></i>
-				</div>
-				<p>$50.00</p>
-			</div>
-			<div class="col-4">
-				<img src="images/product-4.jpg">
-				<h4>Blue T-Shirt</h4>
-				<div class="rating">
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star-o"></i>
-				</div>
-				<p>$57.00</p>
-			</div>
-		</div>
-		
-		
-		<div class="row">
-			<div class="col-4">
-				<img src="images/product-5.jpg">
-				<h4>Grey Shoes</h4>
-				<div class="rating">
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star-o"></i>
-				</div>
-				<p>$80.00</p>
-			</div>
-			<div class="col-4">
-				<img src="images/product-6.jpg">
-				<h4>Black Printed T-Shirt</h4>
+				<img src="images/product-10.jpg">
+				<h4>Red and Black Shoes</h4>
 				<div class="rating">
 					<i class="fa fa-star"></i>
 					<i class="fa fa-star"></i>
@@ -117,32 +117,6 @@
 				</div>
 				<p>$50.00</p>
 			</div>
-			<div class="col-4">
-				<img src="images/product-7.jpg">
-				<h4>Set of Socks</h4>
-				<div class="rating">
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star-half-o"></i>
-					<i class="fa fa-star-o"></i>
-				</div>
-				<p>$30.00</p>
-			</div>
-			<div class="col-4">
-				<img src="images/product-8.jpg">
-				<h4>Black Watch</h4>
-				<div class="rating">
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star"></i>
-					<i class="fa fa-star-o"></i>
-				</div>
-				<p>$100.00</p>
-			</div>
-		</div>
-		<div class="row">
 			<div class="col-4">
 				<img src="images/product-9.jpg">
 				<h4>Black and Yellow Watch</h4>
@@ -191,16 +165,9 @@
 				</div>
 				<p>$40.00</p>
 			</div>
-		</div>
 	
 
-		<div class="page-btn">
-			<span>1</span>
-			<span>2</span>
-			<span>3</span>
-			<span>4</span>
-			<span>&#8594;</span>
-		</div>
+		
 	</div>
 
 
@@ -263,8 +230,61 @@
 			{
 				MenuItems.style.maxHeight = "0px";
 			}
-		}
+		} 
 	</script>
+
+<!------js for product gallery------>
+
+	<script>
+		var ProductImg = document.getElementById("ProductImg");
+		var SmallImg = document.getElementsByClassName("small-img")
+		SmallImg[0].onclick = function(){
+			ProductImg.src = SmallImg[0].src;
+		}
+		SmallImg[1].onclick = function(){
+			ProductImg.src = SmallImg[1].src;
+		}
+		SmallImg[2].onclick = function(){
+			ProductImg.src = SmallImg[2].src;
+		}
+		SmallImg[3].onclick = function(){
+			ProductImg.src = SmallImg[3].src;
+		}
+
+
+	</script>
+
+<!------js for bartering system------>
+<script type="text/javascript">
+function startBarter() {
+    let userPrice = parseFloat(document.getElementById("preferredPrice").value);
+    let originalPrice = 50; // Assuming original price is $50
+    let barterResult = document.getElementById("barterResult");
+
+    if (isNaN(userPrice) || userPrice <= 0) {
+        barterResult.innerHTML = "<p style='color:red;'>Please enter a valid price!</p>";
+        return;
+    }
+
+    let finalPrice = originalPrice;
+    let history = `<p>Original Price: $${originalPrice}</p>`;
+
+    for (let i = 1; i <= 3; i++) {
+        let counterOffer = Math.floor((Math.random() * (originalPrice * 1.1 - originalPrice * 0.7)) + originalPrice * 0.7);
+        history += `<p>Round ${i}: System's Offer - $${counterOffer}</p>`;
+
+        if (counterOffer <= userPrice) {
+            finalPrice = counterOffer;
+            history += `<p style='color:green;'>Price Accepted at $${finalPrice}!</p>`;
+            barterResult.innerHTML = history;
+            return;
+        }
+    }
+
+    history += `<p style='color:blue;'>Final Price after negotiation: $${finalPrice}</p>`;
+    barterResult.innerHTML = history;
+}
+</script> 
 
 </body>
 </html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ALL Product | E-Commerce Project</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+	
+		<div class="container">
+			<div class="navbar">
+				<div class="logo">
+					<img src="images/logo.png" width="125px">
+				</div>
+				<nav>
+					<ul id="MenuItems">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="product.html">Products</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="account.html">Account</a></li>
+					</ul>
+				</nav>
+				<img src="images/cart.png" width="30px" height="30px">
+				<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+			</div>
+		</div>
+
+	<header>
+        <h1>About Us</h1>
+    </header>
+    <section class="about-container">
+        <div class="about-content">
+            <h2>Welcome to Our E-Commerce Platform</h2>
+            <p>We are a leading online marketplace dedicated to bringing high-quality products to customers worldwide. Our mission is to provide a seamless shopping experience with a wide range of products, from electronics to fashion and home essentials.</p>
+            <h3>Why Choose Us?</h3>
+            <ul id="about-id">
+                <li id="about-list">Wide selection of top-quality products</li>
+                <li id="about-list">Secure and convenient payment methods</li>
+                <li id="about-list">Fast and reliable delivery services</li>
+                <li id="about-list">Exceptional customer support</li>
+            </ul>
+            <h3>Our Vision</h3>
+            <p>To become the most trusted online shopping destination, connecting buyers and sellers through innovation and excellence.</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+<!------ footer ------>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p>sdfdfewfdfmkmk</p>
+					<div class="app-logo">
+						<img src="images/play-store.png">
+						<img src="images/app-store.png">
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="images/logo.png">
+					<p>sdfdfewfdfmkmk</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog Posts</li>
+						<li>Return Policy</li>
+						<li>Join Affiliate</li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>YouTube</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">Copyright 2024 - JECRC 7TH SEM PROJECT</p>
+		</div>
+	</div>
+
+<!------js for toggle menu------>
+	<script >
+		var MenuItems = document.getElementById("MenuItems");
+		MenuItems.style.maxHeight = "0px";
+
+		function menutoggle(){
+			if(MenuItems.style.maxHeight = "0px")
+			{
+				MenuItems.style.maxHeight = "200px";
+			}
+			else
+			{
+				MenuItems.style.maxHeight = "0px";
+			}
+		}
+	</script>
+
+</body>
+</html>

@@ -368,6 +368,50 @@ input:focus{
 	flex-basis: 24%;
 	cursor: pointer;
 }
+.bartering-system {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #ff523b;
+    border-radius: 10px;
+    background: #fff8f8;
+    text-align: center;
+    width: 50%;
+}
+
+.bartering-system h3 {
+    color: #ff523b;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.bartering-system input {
+    width: 80%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.bartering-system button {
+    background-color: #ff523b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.bartering-system button:hover {
+    background-color: #e8433f;
+}
+
+#barterResult {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
 
 /*------cart items------*/
 
@@ -514,4 +558,52 @@ form a{
 	.cart-info p{
 		display: none;
 	}
+}
+
+/*------about page------*/
+
+.about-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#about-id{
+    list-style-type: none;
+    padding: 0;
+}
+
+#about-list {
+    background: #ff523b;
+    color: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*------contacts page------*/
+
+.contact-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+
+
+.contact-details p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#Contact_Form {
+    margin-top: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
